@@ -14,3 +14,5 @@ b = torch.Tensor([1])
 
 # Add the 2 variables to give you 2, it's that simple!
 c = a + b
+
+torch.rand(2,2)
