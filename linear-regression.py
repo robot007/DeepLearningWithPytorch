@@ -35,8 +35,12 @@ model = LinearRegressionModel(input_dim, output_dim)
 #######################
 #  USE GPU FOR MODEL  #
 #######################
+if torch.cuda.is_available():
+    print('Using GPU')
+    model.cuda()
+else:
+    print('Using CPU')
 
-# model.cuda()
 
 
 '''
